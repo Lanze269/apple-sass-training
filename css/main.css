@@ -80,7 +80,7 @@ li a {
 }
 
 .block {
-  display: grid;
+  display: block;
 }
 
 .justify-start {
@@ -352,7 +352,7 @@ nav ul a {
 
 .slider {
   position: relative;
-  margin: 1rem 0;
+  margin-bottom: 6rem;
   isolation: isolate;
 }
 .slider__item {
@@ -370,7 +370,7 @@ nav ul a {
   }
 }
 .slider__item__content {
-  position: relative;
+  position: absolute;
   left: 8rem;
   bottom: 8rem;
   display: flex;
@@ -408,7 +408,7 @@ nav ul a {
     display: block;
   }
 }
-.slider__item__content p span *:after {
+.slider__item__content p span:after {
   content: "";
   position: absolute;
   width: 3px;
@@ -593,4 +593,4 @@ button[data-action] {
   .product__item.airpods {
     background-image: url("../images/promo-airpods-sm.jpg");
   }
-}/*# sourceMappingURL=main.min.css.map */
+}/*# sourceMappingURL=main.css.map */

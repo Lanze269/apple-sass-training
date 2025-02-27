@@ -1,14 +1,13 @@
 .cta {
-
+    
     text-align: center;
     margin-top: 4.256rem;
 
     p {
         font-size: clamp(1.2rem, 3vw, 1.8rem);
-        padding: .6rem .4rem;
+        padding: .6rem .4rem;    
     }
 }
-
 .product {
     .wrapper {
         display: grid;
@@ -30,20 +29,17 @@
         }
 
         h4 {
-            font-size: clamp(2.5rem, 6vw, 3.8rem);
+            font-size: clamp(2.5rem, 6vw, 3.8rem) ;
             line-height: 1.2;
         }
-
         p {
-            font-size: clamp(1.8rem, 4vw, 2rem);
-            @include flexItem(center, center);
-            gap: 1rem;
+           font-size: clamp(1.8rem, 4vw, 2rem) ;
+           @include flexItem(center, center);
+           gap: 1rem
         }
-
         span {
             opacity: 0.8;
         }
-
         ul {
             margin-top: 1rem;
             @include flexItem(center);
@@ -60,19 +56,18 @@
             background-image: url('../images/promo-watch-sm.jpg');
         }
     }
-
     &__item.ipad {
         background-image: url('../images/promo-ipadpro.jpg');
         @include mediaQuery {
             background-image: url('../images/promo-ipadpro-sm.jpg');
         }
     }
-
     &__item.studio {
         background-image: url('../images/promo-mac-studio.jpg');
         @include mediaQuery {
             background-image: url('../images/promo-mac-studio-sm.jpg');
         }
+     
     }
 
     &__item.college {
@@ -80,20 +75,20 @@
         @include mediaQuery {
             background-image: url('../images/promo-college-sm.jpg');
         }
+     
     }
-
     &__item.mac {
         background-image: url('../images/promo-mac.jpg');
+        
         @include mediaQuery {
             background-image: url('../images/promo-mac-sm.jpg');
         }
     }
-
     &__item.airpods {
         background-image: url('../images/promo-airpods.jpg');
         @include mediaQuery {
             background-image: url('../images/promo-airpods-sm.jpg');
         }
+     
     }
 }
-

@@ -1,3 +1,4 @@
+
 .banner {
     width: 100%;
     height: 69.2rem;
@@ -9,18 +10,17 @@
     @include mediaQuery {
         height: 55.2rem;
     }
-
     h1 {
         font-size: clamp(3.5rem, 7vw, 5.6rem);
         line-height: 1.2;
         font-weight: 500;
+    
     }
 
     h3 {
         font-size: clamp(1.8rem, 7vw, 2.8rem);
         font-weight: 500;
     }
-
     ul {
         @include flexItem(center);
         gap: 3rem;
@@ -31,7 +31,7 @@
             color: $accent;
             &:hover {
                 text-decoration: underline;
-            }
+            }   
         }
     }
 
@@ -57,6 +57,7 @@
         color: $text-dark;
         @include mediaQuery($break-sm) {
             background-image: url('../images/banner-air-sm.jpg');
+
         }
     }
 }

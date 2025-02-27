@@ -1,5 +1,5 @@
 header {
-    background-color:  rgba($dark, 0.8);
+    background-color: rgba($dark, 0.8);
     color: $light;
     position: fixed;
     top: 0;
@@ -17,17 +17,17 @@ header {
     border: none;
     display: none;
     align-self: center;
-    margin-top: 0.8rem;
-
+    margin-top: .8rem;
+   
     span {
         display: block;
         width: 2rem;
         height: 1px;
-        margin-bottom: 0.5rem;
+        margin-bottom: .5rem;
         background: $light;
-        transition: .2s ease-in;
+        transition: .2s ease-in ;
     }
-} 
+}
 
 .toggle-menu.open {
     span:first-child {
@@ -35,12 +35,14 @@ header {
     }
 
     span:last-child {
-        transform: rotate(-45deg) translate(2px, -2px);
+        transform: rotate(-45deg)translate(2px, -2px);;
     }
 }
 
-@media screen and (max-width: $break-sm) {
 
+
+@media screen and (max-width: $break-sm) {
+    
     nav {
         ul {
             background-color: $dark;
@@ -55,7 +57,7 @@ header {
             align-items: flex-start!important;
             z-index: 9999;
             overflow: hidden;
-            transition: .5s ease-in;
+            transition: .5s ease-in ;
             li {
                 padding-left: 3rem;
             }
@@ -71,9 +73,11 @@ header {
         ul.open {
             height: 100vh;
         }
-    }
+    } 
 
-    .toggle-menu {
+    .toggle-menu  {
         display: block;
     }
 }
+
+

@@ -24,14 +24,15 @@ $colors: (
 $displays: (
     'grid' : grid,
     'flex' : flex,
-    'block' : grid,
+    'block' : block,
 );
 
 @each $key, $val in $displays {
     .#{$key} {
-        display:$val;
+      display: $val;  
     }
 }
+
 
 $justify: (
     'start' : flex-start,
@@ -43,7 +44,7 @@ $justify: (
 );
 @each $key, $val in $justify {
     .justify-#{$key} {
-        justify-content: $val;
+      justify-content: $val;  
     }
 }
 $items: (
@@ -53,17 +54,22 @@ $items: (
 );
 @each $key, $val in $items {
     .items-#{$key} {
-        align-items: $val;
+      align-items: $val;  
     }
 }
 
 
+
+
+
+
+
 @for $i from 1 through 5 {
     .gap-#{$i} {
-        grid-gap: $i + rem;
+        grid-gap: $i + rem
     }
     .mb-#{$i} {
-        margin-bottom: $i + rem;
+        margin-bottom: $i + rem
     }
     .grid-cols-#{$i} {
         grid-template-columns: repeat($i, 1fr);
@@ -73,3 +79,7 @@ $items: (
         padding-bottom: $i + rem;
     }
 }
+
+
+
+
